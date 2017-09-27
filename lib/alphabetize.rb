@@ -1,13 +1,18 @@
 require 'pry'
+array = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
+
 def alphabetize(arr)
   # code here
   alphabet= "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |phrase|
-    phrases.map do |words|
-      words.map do |letters|
-        alphabet.index(letters)
+    phrase.split.map do |words|
+      words.map do |letter|
+        alphabet.index(letter)
+        binding.pry
       end
     end
-   #binding.pry
   end
 end
+
+
+
