@@ -5,10 +5,10 @@ def alphabetize(arr)
   # code here
   alphabet= "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |phrase|
+    binding.pry
     phrase.split.map do |words|
       words.map do |letter|
         alphabet.index(letter)
-        binding.pry
       end
     end
   end
