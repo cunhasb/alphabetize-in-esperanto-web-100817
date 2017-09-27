@@ -9,7 +9,6 @@ def alphabetize(arr)
       words.chars.map do |letter|
         alphabet.index(letter)
       end
-      binding.pry
     end
   end
 end
