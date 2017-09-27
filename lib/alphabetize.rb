@@ -4,6 +4,6 @@ def alphabetize(arr)
   ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |phrase|
     phrase.index(ESPERANTO_ALPHABET)
-  end  
-  binding.pry
+   binding.pry
+  end
 end
