@@ -1,13 +1,13 @@
 require 'pry'
 def alphabetize(arr)
   # code here
-  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  alphabet= "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |phrase|
-    phrases.map |words| do
-      words.map |letters| do
-        ESPERANTO_ALPHABET.index(letters)
+    phrases.map do |words|
+      words.map do |letters|
+        alphabet.index(letters)
       end
     end
-   binding.pry
+   #binding.pry
   end
 end
