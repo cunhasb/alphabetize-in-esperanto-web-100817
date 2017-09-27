@@ -14,4 +14,4 @@ def alphabetize(arr)
   end
 end
 
-alphabetize(array)
+#alphabetize(array)
