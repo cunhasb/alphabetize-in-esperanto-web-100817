@@ -6,6 +6,7 @@ def alphabetize(arr)
   alphabet= "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |phrase|
     phrase.split.map do |words|
+      words
       words.chars.map do |letter|
         alphabet.index(letter)
       end
